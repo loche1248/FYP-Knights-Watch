@@ -712,6 +712,9 @@ MonoBehaviour:
   - {fileID: 8523281620258966596, guid: 88699a72c652fbf40b7a84f0bdba024b, type: 3}
   moveAmount: 10
   startTimeBtwRoom: 0.25
+  minX: -5
+  maxX: 25
+  minY: -25
 --- !u!1 &1457352032
 GameObject:
   m_ObjectHideFlags: 0
