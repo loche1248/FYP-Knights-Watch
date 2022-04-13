@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelGeneration : MonoBehaviour
 {
     public Transform[] startingPositions;
-    public GameObject[] rooms;
+    public GameObject[] rooms; // 0 --> LR, 1 --> LRB, 2 --> LRT, 3 --> LRTB
 
     private int direction;
     public float moveAmount;
@@ -17,6 +17,8 @@ public class LevelGeneration : MonoBehaviour
     public float maxX;
     public float minY;
     private bool stopGeneration;
+
+    public LayerMask room;
 
     private void Start()
     {
@@ -50,6 +52,17 @@ public class LevelGeneration : MonoBehaviour
             {
                 Vector2 newPos = new Vector2(transform.position.x + moveAmount, transform.position.y);
                 transform.position = newPos;
+
+                int rand = Random.Range(0, rooms.Length);
+                Instantiate(rooms[rand], transform.position, Quaternion.identity);
+
+                direction = Random.Range(1, 6);
+                if (direction == 3)
+                {
+                    direction = 2;
+                } else if(direction == 4){
+                    direction = 5;
+                }
             }
             else 
             {
@@ -64,6 +77,11 @@ public class LevelGeneration : MonoBehaviour
             {
                 Vector2 newPos = new Vector2(transform.position.x - moveAmount, transform.position.y);
                 transform.position = newPos;
+
+                int rand = Random.Range(0, rooms.Length);
+                Instantiate(rooms[rand], transform.position, Quaternion.identity);
+
+                direction = Random.Range(3, 6);
             }
             else
             {
@@ -76,8 +94,21 @@ public class LevelGeneration : MonoBehaviour
 
             if(transform.position.y > minY)
             {
+
+                Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
+                if (roomDetection.GetComponent<RoomType>().type != 1 && roomDetection.GetComponent<RoomType>().type != 3)
+                {
+                    roomDetection.GetComponent<RoomType>().RoomDestroy();
+                }
+
+
                 Vector2 newPos = new Vector2(transform.position.x, transform.position.y - moveAmount);
                 transform.position = newPos;
+
+                int rand = Random.Range(2, 4);
+                Instantiate(rooms[rand], transform.position, Quaternion.identity);
+
+                direction = Random.Range(1, 6);
             } else
             {
                 stopGeneration = true;
@@ -86,7 +117,7 @@ public class LevelGeneration : MonoBehaviour
             
         }
 
-        Instantiate(rooms[0], transform.position, Quaternion.identity);
-        direction = Random.Range(1, 6);
+        
+        
     }
 }
