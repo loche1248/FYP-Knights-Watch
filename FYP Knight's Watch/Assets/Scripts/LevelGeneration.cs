@@ -19,6 +19,7 @@ public class LevelGeneration : MonoBehaviour
     private bool stopGeneration;
 
     public LayerMask room;
+    //private int downCounter;
 
     private void Start()
     {
@@ -95,10 +96,19 @@ public class LevelGeneration : MonoBehaviour
             if(transform.position.y > minY)
             {
 
+                //downCounter++;
+
                 Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
                 if (roomDetection.GetComponent<RoomType>().type != 1 && roomDetection.GetComponent<RoomType>().type != 3)
                 {
                     roomDetection.GetComponent<RoomType>().RoomDestroy();
+
+                    int randBottomRoom = Random.Range(1, 4);
+                    if (randBottomRoom == 2)
+                    {
+                        randBottomRoom = 1;
+                    }
+                    Instantiate(rooms[randBottomRoom], transform.position, Quaternion.identity);
                 }
 
 
