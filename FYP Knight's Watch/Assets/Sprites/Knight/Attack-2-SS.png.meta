@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: e65f74132ab055144bcc7e74b98c6c1c
+guid: 90fc2f4c2630d694388268b317e761ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2627226197632216559
-    second: Attack-1-SS_0
+      213: 721711602388151193
+    second: Attack-2-SS_0
   - first:
-      213: -1547348025540046665
-    second: Attack-1-SS_1
+      213: 947112877547669087
+    second: Attack-2-SS_1
   - first:
-      213: 1956904019297037921
-    second: Attack-1-SS_2
+      213: -3354246196788325597
+    second: Attack-2-SS_2
+  - first:
+      213: -6942959840351308489
+    second: Attack-2-SS_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,64 +103,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack-1-SS_0
+      name: Attack-2-SS_0
       rect:
         serializedVersion: 2
-        x: 54
+        x: 2
         y: 3
-        width: 31
+        width: 35
         height: 32
       alignment: 9
-      pivot: {x: 0.40390188, y: 0.50866485}
+      pivot: {x: 0.2304676, y: 0.44310862}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fede77e9e48c57420800000000000000
-      internalID: 2627226197632216559
+      spriteID: 99baf9ae0e8040a00800000000000000
+      internalID: 721711602388151193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack-1-SS_1
+      name: Attack-2-SS_1
       rect:
         serializedVersion: 2
-        x: 95
+        x: 43
         y: 3
-        width: 36
+        width: 41
         height: 32
       alignment: 9
-      pivot: {x: 0.34369215, y: 0.48280513}
+      pivot: {x: 0.7381618, y: 0.41724885}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b098c14b27b68ae0800000000000000
-      internalID: -1547348025540046665
+      spriteID: f564d64e422d42d00800000000000000
+      internalID: 947112877547669087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack-1-SS_2
+      name: Attack-2-SS_2
       rect:
         serializedVersion: 2
-        x: 133
+        x: 92
         y: 3
-        width: 37
+        width: 46
         height: 32
       alignment: 9
-      pivot: {x: 0.37922794, y: 0.47246122}
+      pivot: {x: 0.12582065, y: 0.39656106}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16eebb166d1582b10800000000000000
-      internalID: 1956904019297037921
+      spriteID: 3231a370bd25371d0800000000000000
+      internalID: -3354246196788325597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack-2-SS_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3
+        width: 45
+        height: 32
+      alignment: 9
+      pivot: {x: 0.102794394, y: 0.4120769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735be028fc6a5af90800000000000000
+      internalID: -6942959840351308489
       vertices: []
       indices: 
       edges: []
