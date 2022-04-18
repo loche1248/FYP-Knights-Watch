@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class KnightController : MonoBehaviour
 {
+
+    public Animator animator;
+
     public float speed;
     public float jumpForce;
     private float moveInput;
@@ -28,6 +31,8 @@ public class KnightController : MonoBehaviour
 
         krb = GetComponent<Rigidbody2D>();
 
+       
+
     }
 
     void FixedUpdate() //Used for Physics of game
@@ -37,7 +42,11 @@ public class KnightController : MonoBehaviour
 
 
 
+        
         moveInput = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+
+
         krb.velocity = new Vector2(moveInput * speed, krb.velocity.y);
 
         if (fRight == false && moveInput > 0)
@@ -54,15 +63,22 @@ public class KnightController : MonoBehaviour
     {
         if(isGrounded == true)
         {
+            
             extraJumps = extraJumpValue;
+            
         }
 
         if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
+            animator.SetTrigger("Jump");
             krb.velocity = Vector2.up * jumpForce;
             extraJumps--;
+
+            
+
         } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
         {
+            
             krb.velocity = Vector2.up * jumpForce;
         }
     }

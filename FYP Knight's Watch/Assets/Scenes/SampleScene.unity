@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 136073372}
   - component: {fileID: 136073373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (7)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -289,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 393485891}
   - component: {fileID: 393485892}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (10)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -336,7 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405907664}
   - component: {fileID: 405907663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (20)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -383,7 +383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418698226}
   - component: {fileID: 418698225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (18)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -508,7 +508,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -548,7 +548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 522635052}
   - component: {fileID: 522635051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (17)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -595,7 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529841704}
   - component: {fileID: 529841705}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (13)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -751,7 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 629067570}
   - component: {fileID: 629067569}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (19)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -828,7 +828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711003056}
   - component: {fileID: 711003057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (2)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -875,7 +875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 802759359}
   - component: {fileID: 802759360}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (11)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -922,7 +922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870130888}
   - component: {fileID: 870130889}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (6)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -969,7 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 885003207}
   - component: {fileID: 885003208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (15)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1016,7 +1016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949748707}
   - component: {fileID: 949748708}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (3)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1707838849}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 2
+    OrthographicSize: 1
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1130,7 +1130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044842354}
   - component: {fileID: 1044842355}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (8)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1177,7 +1177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1081048366}
   - component: {fileID: 1081048367}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (16)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1224,7 +1224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088531283}
   - component: {fileID: 1088531284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (1)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1380,7 +1380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217445695}
   - component: {fileID: 1217445696}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (12)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1461,7 +1461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278508588}
   - component: {fileID: 1278508589}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (14)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1570,7 +1570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390814286}
   - component: {fileID: 1390814287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (9)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1704,7 +1704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457352033}
   - component: {fileID: 1457352034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (4)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1754,6 +1754,7 @@ GameObject:
   - component: {fileID: 1707838852}
   - component: {fileID: 1707838851}
   - component: {fileID: 1707838850}
+  - component: {fileID: 1707838853}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -1886,6 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115c219242762b142b0cb5fb43c598d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1707838853}
   speed: 4
   jumpForce: 10
   groundCheck: {fileID: 658415581}
@@ -1893,7 +1895,26 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 63
-  extraJumpValue: 2
+  extraJumpValue: 1
+--- !u!95 &1707838853
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707838847}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a00a807506efa3b4f8d3faa45fc43144, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1812892592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,7 +1925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812892593}
   - component: {fileID: 1812892594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pose (5)
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
