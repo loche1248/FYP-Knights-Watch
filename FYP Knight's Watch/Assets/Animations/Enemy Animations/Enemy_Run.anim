@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Knight_Attack1
+  m_Name: Enemy_Run
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2627226197632216559, guid: e65f74132ab055144bcc7e74b98c6c1c, type: 3}
+      value: {fileID: 6028843461100648977, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
     - time: 0.125
-      value: {fileID: -1547348025540046665, guid: e65f74132ab055144bcc7e74b98c6c1c, type: 3}
+      value: {fileID: 6579185620274212965, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
     - time: 0.25
-      value: {fileID: 1956904019297037921, guid: e65f74132ab055144bcc7e74b98c6c1c, type: 3}
+      value: {fileID: 6126755859789769181, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
+    - time: 0.375
+      value: {fileID: 794890333929932651, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2627226197632216559, guid: e65f74132ab055144bcc7e74b98c6c1c, type: 3}
-    - {fileID: -1547348025540046665, guid: e65f74132ab055144bcc7e74b98c6c1c, type: 3}
-    - {fileID: 1956904019297037921, guid: e65f74132ab055144bcc7e74b98c6c1c, type: 3}
+    - {fileID: 6028843461100648977, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
+    - {fileID: 6579185620274212965, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
+    - {fileID: 6126755859789769181, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
+    - {fileID: 794890333929932651, guid: de58e065fd94d3c43a08c3a7c7e5b502, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.375
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

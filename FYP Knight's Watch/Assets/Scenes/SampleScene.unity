@@ -457,7 +457,7 @@ Animator:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48f1e3a31acae314093a507aad92edde, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1611,11 +1611,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548629543}
-  - component: {fileID: 1548629547}
   - component: {fileID: 1548629544}
   - component: {fileID: 1548629542}
   - component: {fileID: 1548629546}
   - component: {fileID: 1548629545}
+  - component: {fileID: 1548629547}
   m_Layer: 8
   m_Name: Enemy Mob
   m_TagString: Untagged
@@ -1701,8 +1701,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a738e82f58371749b6735c1e3bfd8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  animator: {fileID: 1548629547}
+  speed: 1
   distance: 3
+  health: 6
+  startDazedTime: 0.6
   groundDetect: {fileID: 1180642256}
 --- !u!50 &1548629545
 Rigidbody2D:
@@ -1751,19 +1754,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &1548629547
-MonoBehaviour:
+--- !u!95 &1548629547
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548629541}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5057c4544de82b4ca8674dc704bb386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa29d993255da3e4498bc40417989546, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1707838847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707838847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.63, y: 9.26, z: 0}
+  m_LocalPosition: {x: 25.63, y: 8.97, z: 0}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 658415581}
@@ -1870,8 +1879,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.0033955798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.37922794, y: 0.47246122}
-    oldSize: {x: 0.37, y: 0.32}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.3, y: 0.32}
     newSize: {x: 0.3, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1954,14 +1963,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1707838853}
-  camAnim: {fileID: 519420030}
-  startTimeBtwAttack: 0.3
+  camAnim: {fileID: 0}
+  startTimeBtwAttack: 0.1
   attackPosition: {fileID: 1977514620}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 0.43
-  damage: 20
+  attackRange: 0.16
+  damage: 1
+  damage2: 2
 --- !u!1 &1812892592
 GameObject:
   m_ObjectHideFlags: 0
