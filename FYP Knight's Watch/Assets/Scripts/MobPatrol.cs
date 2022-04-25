@@ -32,6 +32,7 @@ public class MobPatrol : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            animator.SetBool("Death", true);
         }
 
         transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -57,15 +58,22 @@ public class MobPatrol : MonoBehaviour
 
     public void DamageTaken(int damage)
     {
+        
         dazedTime = startDazedTime;
         health -= damage;
-        Debug.Log("damage Taken");
+        animator.SetTrigger("Hit");
+        // Debug.Log("damage Taken");
+
     }
 
     public void DamageTaken2(int damage2)
     {
         dazedTime = startDazedTime;
         health -= damage2;
-        Debug.Log("damage Taken");
+        //animator.SetTrigger("Hit");
+       // Debug.Log("damage Taken");
+        
     }
+
+    
 }

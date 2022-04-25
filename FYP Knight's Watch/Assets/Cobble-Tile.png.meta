@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 90fc2f4c2630d694388268b317e761ad
+guid: 6b31166d7f7f5914b940c174859c4a1f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 721711602388151193
-    second: Attack-2-SS_0
-  - first:
-      213: 947112877547669087
-    second: Attack-2-SS_1
-  - first:
-      213: -3354246196788325597
-    second: Attack-2-SS_2
-  - first:
-      213: -6942959840351308489
-    second: Attack-2-SS_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,91 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Attack-2-SS_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 3
-        width: 35
-        height: 32
-      alignment: 9
-      pivot: {x: 0.2756524, y: 0.5362037}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99baf9ae0e8040a00800000000000000
-      internalID: 721711602388151193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack-2-SS_1
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 3
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.2756524, y: 0.5362037}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f564d64e422d42d00800000000000000
-      internalID: 947112877547669087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack-2-SS_2
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 3
-        width: 46
-        height: 32
-      alignment: 9
-      pivot: {x: 0.2756524, y: 0.5362037}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3231a370bd25371d0800000000000000
-      internalID: -3354246196788325597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack-2-SS_3
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 3
-        width: 45
-        height: 32
-      alignment: 9
-      pivot: {x: 0.2756524, y: 0.5362037}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 735be028fc6a5af90800000000000000
-      internalID: -6942959840351308489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
