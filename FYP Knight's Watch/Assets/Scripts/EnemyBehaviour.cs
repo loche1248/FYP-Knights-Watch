@@ -8,6 +8,11 @@ public class EnemyBehaviour : MonoBehaviour
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
+    private bool mRight = true;
+    private float timeBtwShots;
+    public float startTimeBtwShots;
+
+    public GameObject projectile;
 
 
     public int health;
@@ -23,7 +28,10 @@ public class EnemyBehaviour : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        timeBtwShots = startTimeBtwShots;
     }
+
+    
 
     void Update()
     {
@@ -43,6 +51,8 @@ public class EnemyBehaviour : MonoBehaviour
             // animator.SetBool("Death", true);
         }
 
+        
+        
 
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
         {
@@ -54,6 +64,18 @@ public class EnemyBehaviour : MonoBehaviour
         } else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+        }
+        Flip();
+
+        if (timeBtwShots <= 0)
+        {
+            animator.SetTrigger("Attack");
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            timeBtwShots = startTimeBtwShots;
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
         }
 
     }
@@ -76,4 +98,19 @@ public class EnemyBehaviour : MonoBehaviour
         // Debug.Log("damage Taken");
 
     }
+    public void Flip()
+    {
+        Vector3 rotation = transform.eulerAngles;
+        if (transform.position.x > player.position.x)
+        {
+            rotation.y = 180f;
+        }
+        else
+        {
+            rotation.y = 0f;
+        }
+
+        transform.eulerAngles = rotation;
+    }
+
 }
