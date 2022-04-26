@@ -32,7 +32,7 @@ public class MobPatrol : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            animator.SetBool("Death", true);
+           // animator.SetBool("Death", true);
         }
 
         transform.Translate(Vector2.right * speed * Time.deltaTime);

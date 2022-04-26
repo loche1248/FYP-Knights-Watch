@@ -27,7 +27,7 @@ public class KnightAttack : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<MobPatrol>().DamageTaken(damage);
+                    enemiesToDamage[i].GetComponent<EnemyBehaviour>().DamageTaken(damage);
                 }
             }
 
@@ -38,7 +38,7 @@ public class KnightAttack : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<MobPatrol>().DamageTaken2(damage2);
+                    enemiesToDamage[i].GetComponent<EnemyBehaviour>().DamageTaken2(damage2);
                 }
             }
 
