@@ -47,8 +47,8 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
-            // animator.SetBool("Death", true);
+            Die();
+            
         }
 
         
@@ -85,7 +85,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         dazedTime = startDazedTime;
         health -= damage;
-        // animator.SetTrigger("Hit");
+        animator.SetTrigger("Hurt");
         // Debug.Log("damage Taken");
 
     }
@@ -94,7 +94,8 @@ public class EnemyBehaviour : MonoBehaviour
     {
         dazedTime = startDazedTime;
         health -= damage2;
-        //animator.SetTrigger("Hit");
+        animator.SetTrigger("Hurt");
+        
         // Debug.Log("damage Taken");
 
     }
@@ -111,6 +112,20 @@ public class EnemyBehaviour : MonoBehaviour
         }
 
         transform.eulerAngles = rotation;
+    }
+
+    void Die()
+    {
+        //animator.SetBool("Death", true);
+       
+        
+
+        Destroy(gameObject);
+
+
+
+
+
     }
 
 }

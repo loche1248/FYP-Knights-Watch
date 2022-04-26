@@ -37,11 +37,20 @@ public class EnemyProjectile : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    /*void OnTriggerEnter2D(Collider2D other)
     {
        if (other.CompareTag("Player"))
         {
             DestroyProjectile();
+        }
+    }*/
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<KnightHealth>().TakeDamage(damage);
+           // Destroy(gameObject);
         }
     }
 
