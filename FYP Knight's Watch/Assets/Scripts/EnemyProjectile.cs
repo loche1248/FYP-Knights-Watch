@@ -9,7 +9,7 @@ public class EnemyProjectile : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
-
+    
     public int damage;
     public LayerMask whatIsEnemies;
 
@@ -52,6 +52,11 @@ public class EnemyProjectile : MonoBehaviour
             collision.GetComponent<KnightHealth>().TakeDamage(damage);
            // Destroy(gameObject);
         }
+        else if (collision.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     void DestroyProjectile()

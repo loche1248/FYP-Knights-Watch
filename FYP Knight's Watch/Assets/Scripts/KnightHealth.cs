@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class KnightHealth : MonoBehaviour
 {
+    public Animator animator;
     public Image healthBar;
     public float healthAmount = 100;
 
@@ -15,14 +16,12 @@ public class KnightHealth : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         }
         
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(10);
-        }
+        
     }
 
     public void TakeDamage(float Damage)
     {
+        animator.SetTrigger("Hurt");
         healthAmount -= Damage;
         healthBar.fillAmount = healthAmount / 100;
     }

@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 4492950665825860158}
   m_Layer: 3
   m_Name: Room LRTB (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
