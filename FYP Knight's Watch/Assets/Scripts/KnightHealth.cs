@@ -18,8 +18,10 @@ public class KnightHealth : MonoBehaviour
     {
         if(healthAmount <= 0)
         {
-            Application.LoadLevel(Application.loadedLevel);
+            // Application.LoadLevel(Application.loadedLevel);
+            Destroy(gameObject);
         }
+
         
         
     }
@@ -38,9 +40,9 @@ public class KnightHealth : MonoBehaviour
             if (healthAmount < 100)
             { // if health < 100...
                 healthAmount += 5;
-                healthBar.fillAmount = healthAmount * 100;
+                
                 // increase health and wait the specified time
-                yield return new WaitForSeconds(0);
+                yield return new WaitForSeconds(1);
                 
             }
             else

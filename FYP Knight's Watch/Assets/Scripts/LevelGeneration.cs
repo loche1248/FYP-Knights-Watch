@@ -6,6 +6,8 @@ public class LevelGeneration : MonoBehaviour
 {
     public Transform[] startingPositions;
     public GameObject[] rooms; // 0 --> LR, 1 --> LRB, 2 --> LRT, 3 --> LRTB
+    public Transform playerPrefab;
+    public Transform bossPrefab;
 
     private int direction;
     public float moveAmount;
@@ -26,6 +28,7 @@ public class LevelGeneration : MonoBehaviour
         int randStartingPos = Random.Range(0, startingPositions.Length);
         transform.position = startingPositions[randStartingPos].position;
         Instantiate(rooms[0], transform.position, Quaternion.identity);
+        Instantiate(playerPrefab, transform.position, Quaternion.identity);
 
         direction = Random.Range(1, 6);
     }
@@ -134,6 +137,7 @@ public class LevelGeneration : MonoBehaviour
             } else
             {
                 stopGeneration = true;
+                Instantiate(bossPrefab, transform.position, Quaternion.identity);
             }
 
             
