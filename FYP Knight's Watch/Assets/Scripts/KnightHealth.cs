@@ -9,6 +9,11 @@ public class KnightHealth : MonoBehaviour
     public Image healthBar;
     public float healthAmount = 100;
 
+    private void Start()
+    {
+        StartCoroutine(addHealth());
+    }
+
     private void Update()
     {
         if(healthAmount <= 0)
@@ -26,6 +31,24 @@ public class KnightHealth : MonoBehaviour
         healthBar.fillAmount = healthAmount / 100;
     }
 
-    
+    IEnumerator addHealth()
+    {
+        while (true)
+        { // loops forever...
+            if (healthAmount < 100)
+            { // if health < 100...
+                healthAmount += 5;
+                healthBar.fillAmount = healthAmount * 100;
+                // increase health and wait the specified time
+                yield return new WaitForSeconds(0);
+                
+            }
+            else
+            { // if health >= 100, just yield 
+                yield return null;
+            }
+        }
+    }
+
 
 }

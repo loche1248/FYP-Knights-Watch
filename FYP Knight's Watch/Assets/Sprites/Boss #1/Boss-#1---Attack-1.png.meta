@@ -106,12 +106,12 @@ TextureImporter:
       name: Boss-#1---Attack-1_0
       rect:
         serializedVersion: 2
-        x: 28
+        x: 144
         y: 3
-        width: 32
+        width: 21
         height: 32
       alignment: 9
-      pivot: {x: 0.6497005, y: 0.4999999}
+      pivot: {x: 0.4982365, y: 0.4722223}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -127,12 +127,12 @@ TextureImporter:
       name: Boss-#1---Attack-1_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 108
         y: 3
-        width: 32
+        width: 28
         height: 32
       alignment: 9
-      pivot: {x: 0.6497005, y: 0.4999999}
+      pivot: {x: 0.33068794, y: 0.4722223}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,12 +148,12 @@ TextureImporter:
       name: Boss-#1---Attack-1_2
       rect:
         serializedVersion: 2
-        x: 108
+        x: 68
         y: 3
-        width: 28
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.6497005, y: 0.4999999}
+      pivot: {x: 0.67261934, y: 0.4722223}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Boss-#1---Attack-1_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 28
         y: 3
-        width: 21
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.6497005, y: 0.4999999}
+      pivot: {x: 0.67129636, y: 0.4722223}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
