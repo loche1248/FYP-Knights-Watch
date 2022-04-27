@@ -1,11 +1,14 @@
+//Reference - https://www.youtube.com/watch?v=AD4JIXQDw0s
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossABehaviour : MonoBehaviour
 {
 	public Transform player;
-	public int health = 500;
+	public int healthAmount = 500;
+	
 
 	public bool isFlipped = false;
 
@@ -36,15 +39,16 @@ public class BossABehaviour : MonoBehaviour
 	public void TakeDamage(int damage)
 	{
 
+		GetComponent<Animator>().SetTrigger("Hurt");
+		healthAmount -= damage;
+		
 
-		health -= damage;
-
-		if (health <= 200)
+		if (healthAmount <= 200)
 		{
 			GetComponent<Animator>().SetBool("Phase2", true);
 		}
 
-		if (health <= 0)
+		if (healthAmount <= 0)
 		{
 			Die();
 		}

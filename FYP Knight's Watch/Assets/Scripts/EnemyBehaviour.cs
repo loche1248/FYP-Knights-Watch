@@ -1,3 +1,4 @@
+//Reference - https://www.youtube.com/watch?v=_Z1t7MNk0c4&list=PLBIb_auVtBwDgHLhYc-NG633rTbTPim9z&index=2
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class EnemyBehaviour : MonoBehaviour
     private bool mRight = true;
     private float timeBtwShots;
     public float startTimeBtwShots;
+    
 
     public GameObject projectile;
 
@@ -23,7 +25,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public Transform player;
 
-
+    //Reference - https://www.youtube.com/watch?v=1QfxdUpVh5I
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -31,8 +33,8 @@ public class EnemyBehaviour : MonoBehaviour
         timeBtwShots = startTimeBtwShots;
     }
 
-    
 
+    //Reference - https://www.youtube.com/watch?v=1QfxdUpVh5I
     void Update()
     {
         if(dazedTime <= 0)
@@ -79,26 +81,29 @@ public class EnemyBehaviour : MonoBehaviour
         }
 
     }
-
+    //Reference - https://www.youtube.com/watch?v=1QfxdUpVh5I
     public void DamageTaken(int damage)
     {
 
         dazedTime = startDazedTime;
         health -= damage;
+       
         animator.SetTrigger("Hurt");
         // Debug.Log("damage Taken");
 
     }
-
+    //Reference - https://www.youtube.com/watch?v=1QfxdUpVh5I
     public void DamageTaken2(int damage2)
     {
         dazedTime = startDazedTime;
         health -= damage2;
+       
         animator.SetTrigger("Hurt");
         
         // Debug.Log("damage Taken");
 
     }
+
     public void Flip()
     {
         Vector3 rotation = transform.eulerAngles;

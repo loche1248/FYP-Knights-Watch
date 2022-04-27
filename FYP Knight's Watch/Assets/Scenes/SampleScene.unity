@@ -1338,6 +1338,7 @@ MonoBehaviour:
   - {fileID: 5164383247662502051, guid: 87e4471441a1ed64994fff3c801dd78e, type: 3}
   playerPrefab: {fileID: 5191104268972315207, guid: 18db3cfa8e9f8ad4c8c68b45aac5768d, type: 3}
   bossPrefab: {fileID: 7726063009451720570, guid: a30094fab3416d449a39e394b3814e0b, type: 3}
+  bgPrefab: {fileID: 4385547886978077429, guid: 11461bef6eeb3e247a88315de0a128e0, type: 3}
   moveAmount: 10
   startTimeBtwRoom: 0
   minX: -5

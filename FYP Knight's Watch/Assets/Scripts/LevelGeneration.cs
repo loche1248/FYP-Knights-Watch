@@ -1,3 +1,6 @@
+//Reference - https://www.youtube.com/watch?v=hk6cUanSfXQ
+//Reference - https://www.youtube.com/watch?v=XNQQLr0E9TY
+//Reference - https://www.youtube.com/watch?v=G9Wa0XZ2a2o
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +8,10 @@ using UnityEngine;
 public class LevelGeneration : MonoBehaviour
 {
     public Transform[] startingPositions;
-    public GameObject[] rooms; // 0 --> LR, 1 --> LRB, 2 --> LRT, 3 --> LRTB
+    public GameObject[] rooms; 
     public Transform playerPrefab;
     public Transform bossPrefab;
+    public Transform bgPrefab;
 
     private int direction;
     public float moveAmount;
@@ -29,6 +33,7 @@ public class LevelGeneration : MonoBehaviour
         transform.position = startingPositions[randStartingPos].position;
         Instantiate(rooms[0], transform.position, Quaternion.identity);
         Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        Instantiate(bgPrefab, transform.position, Quaternion.identity);
 
         direction = Random.Range(1, 6);
     }

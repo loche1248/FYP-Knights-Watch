@@ -1,3 +1,4 @@
+//Reference - https://www.youtube.com/watch?v=aoZqeG7rqV0
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,21 +33,21 @@ public class KnightHealth : MonoBehaviour
         healthAmount -= Damage;
         healthBar.fillAmount = healthAmount / 100;
     }
-
+   //Reference- https://answers.unity.com/questions/368113/regenerating-health-over-time.html
     IEnumerator addHealth()
     {
         while (true)
-        { // loops forever...
+        { 
             if (healthAmount < 100)
-            { // if health < 100...
+            { 
                 healthAmount += 5;
+                healthBar.fillAmount = healthAmount / 100;
                 
-                // increase health and wait the specified time
                 yield return new WaitForSeconds(1);
                 
             }
             else
-            { // if health >= 100, just yield 
+            { 
                 yield return null;
             }
         }
