@@ -87,7 +87,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         dazedTime = startDazedTime;
         health -= damage;
-       
+        SoundManagerScript.PlaySound("Hit");
         animator.SetTrigger("Hurt");
         // Debug.Log("damage Taken");
 

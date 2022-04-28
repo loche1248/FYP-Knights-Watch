@@ -29,6 +29,7 @@ public class KnightHealth : MonoBehaviour
 
     public void TakeDamage(float Damage)
     {
+        SoundManagerScript.PlaySound("Hit");
         animator.SetTrigger("Hurt");
         healthAmount -= Damage;
         healthBar.fillAmount = healthAmount / 100;

@@ -38,7 +38,7 @@ public class BossABehaviour : MonoBehaviour
 
 	public void TakeDamage(int damage)
 	{
-
+		SoundManagerScript.PlaySound("Hit");
 		GetComponent<Animator>().SetTrigger("Hurt");
 		healthAmount -= damage;
 		

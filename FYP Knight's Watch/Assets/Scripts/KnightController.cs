@@ -45,6 +45,7 @@ public class KnightController : MonoBehaviour
 
         
         moveInput = Input.GetAxis("Horizontal");
+        //SoundManagerScript.PlaySound("Footstep");
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
 
@@ -71,6 +72,7 @@ public class KnightController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
+            SoundManagerScript.PlaySound ("Jump");
             animator.SetTrigger("Jump");
             krb.velocity = Vector2.up * jumpForce;
             extraJumps--;
@@ -79,7 +81,7 @@ public class KnightController : MonoBehaviour
 
         } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
         {
-            
+            SoundManagerScript.PlaySound("Jump");
             krb.velocity = Vector2.up * jumpForce;
         }
     }

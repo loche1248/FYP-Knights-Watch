@@ -23,7 +23,7 @@ public class KnightAttack : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {
-                
+                SoundManagerScript.PlaySound("Slash1");
                 animator.SetTrigger("Attack1");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
@@ -39,7 +39,7 @@ public class KnightAttack : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Mouse1))
             {
-
+                SoundManagerScript.PlaySound("Slash2");
                 animator.SetTrigger("Attack2");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
