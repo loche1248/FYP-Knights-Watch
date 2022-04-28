@@ -41,12 +41,10 @@ public class KnightController : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-
-
-        
         moveInput = Input.GetAxis("Horizontal");
-        //SoundManagerScript.PlaySound("Footstep");
+
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
+
 
 
         krb.velocity = new Vector2(moveInput * speed, krb.velocity.y);
@@ -63,7 +61,11 @@ public class KnightController : MonoBehaviour
 
     void Update()
     {
-        if(isGrounded == true)
+
+        
+
+      
+        if (isGrounded == true)
         {
             
             extraJumps = extraJumpValue;

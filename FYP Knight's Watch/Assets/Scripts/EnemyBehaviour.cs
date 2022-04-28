@@ -1,4 +1,5 @@
 //Reference - https://www.youtube.com/watch?v=_Z1t7MNk0c4&list=PLBIb_auVtBwDgHLhYc-NG633rTbTPim9z&index=2
+//Reference - https://www.youtube.com/watch?v=nT031tVrGC0&t=362s
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public GameObject projectile;
 
+    public ParticleSystem deathParticle;
 
     public int health;
 
@@ -97,7 +99,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         dazedTime = startDazedTime;
         health -= damage2;
-       
+        SoundManagerScript.PlaySound("Hit");
         animator.SetTrigger("Hurt");
         
         // Debug.Log("damage Taken");
@@ -122,9 +124,9 @@ public class EnemyBehaviour : MonoBehaviour
     void Die()
     {
         //animator.SetBool("Death", true);
-       
-        
 
+        //Reference - https://www.youtube.com/watch?v=nT031tVrGC0&t=362s
+        Instantiate(deathParticle, transform.position, Quaternion.identity);
         Destroy(gameObject);
 
 

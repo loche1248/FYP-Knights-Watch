@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8142679128401757039}
   - component: {fileID: 6476059814291245048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Right Template
   m_TagString: Wall
   m_Icon: {fileID: 0}
