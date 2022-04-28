@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   healthAmount: 500
+  deathParticle: {fileID: 3036166104299396526, guid: 8f9ef5bbb0262cc44b1885b873ed935c, type: 3}
   isFlipped: 0
 --- !u!114 &7726063009451720568
 MonoBehaviour:

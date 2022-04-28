@@ -1,4 +1,5 @@
 //Reference - https://www.youtube.com/watch?v=QGDeafTx5ug
+//Reference for dust particles on jump - https://www.youtube.com/watch?v=1CXVbCbqKyg
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

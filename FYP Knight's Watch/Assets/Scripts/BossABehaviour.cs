@@ -8,7 +8,7 @@ public class BossABehaviour : MonoBehaviour
 {
 	public Transform player;
 	public int healthAmount = 500;
-	
+	public ParticleSystem deathParticle;
 
 	public bool isFlipped = false;
 
@@ -56,7 +56,8 @@ public class BossABehaviour : MonoBehaviour
 
 	void Die()
 	{
-
+		//Reference for death particle - https://www.youtube.com/watch?v=nT031tVrGC0&t=362s
+		Instantiate(deathParticle, transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
 }

@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8833657206859830430}
   - component: {fileID: 3108449155988772129}
-  - component: {fileID: 665023501010451923}
+  - component: {fileID: 1863136714681996661}
   m_Layer: 3
   m_Name: Room LRB (2)
   m_TagString: Wall
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
---- !u!61 &665023501010451923
+--- !u!61 &1863136714681996661
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

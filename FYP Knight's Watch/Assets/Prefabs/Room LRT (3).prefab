@@ -640,7 +640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5915755040124578109}
   - component: {fileID: 2332180927814392684}
-  - component: {fileID: 3209934325198339641}
+  - component: {fileID: 2034622627705777807}
   m_Layer: 3
   m_Name: Room LRT (3)
   m_TagString: Wall
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
---- !u!61 &3209934325198339641
+--- !u!61 &2034622627705777807
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
