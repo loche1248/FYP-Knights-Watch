@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class KnightController : MonoBehaviour
 {
-
+    public ParticleSystem dustParticle;
     public Animator animator;
 
     public float speed;
@@ -74,6 +74,7 @@ public class KnightController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
+            CreateDust();
             SoundManagerScript.PlaySound ("Jump");
             animator.SetTrigger("Jump");
             krb.velocity = Vector2.up * jumpForce;
@@ -90,9 +91,15 @@ public class KnightController : MonoBehaviour
 
     void flip()
     {
+       
         fRight = !fRight;
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    void CreateDust()
+    {
+        dustParticle.Play();
     }
 }
