@@ -25,6 +25,8 @@ public class KnightController : MonoBehaviour
     private int extraJumps;
     public int extraJumpValue;
 
+    
+
 
 
     void Start()

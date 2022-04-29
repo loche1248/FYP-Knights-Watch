@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossABehaviour : MonoBehaviour
 {
@@ -15,25 +16,41 @@ public class BossABehaviour : MonoBehaviour
 	void Start()
     {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
+		
+	}
+
+	void Update()
+    {
+		if (player == null)
+		{
+			Destroy(gameObject);
+		}
 	}
 
 	public void LookAtPlayer()
 	{
 		Vector3 flipped = transform.localScale;
 		flipped.z *= -1f;
+		//Reference - https://answers.unity.com/questions/131158/how-can-i-check-if-an-object-is-null.html
+		if (player != null)
+		{
+			if (transform.position.x > player.position.x && isFlipped)
+			{
+				transform.localScale = flipped;
+				transform.Rotate(0f, 180f, 0f);
+				isFlipped = false;
+			}
+			else if (transform.position.x < player.position.x && !isFlipped)
+			{
+				transform.localScale = flipped;
+				transform.Rotate(0f, 180f, 0f);
+				isFlipped = true;
+			}
+		}
 
-		if (transform.position.x > player.position.x && isFlipped)
-		{
-			transform.localScale = flipped;
-			transform.Rotate(0f, 180f, 0f);
-			isFlipped = false;
-		}
-		else if (transform.position.x < player.position.x && !isFlipped)
-		{
-			transform.localScale = flipped;
-			transform.Rotate(0f, 180f, 0f);
-			isFlipped = true;
-		}
+		
+
+		
 	}
 
 	public void TakeDamage(int damage)
@@ -57,7 +74,9 @@ public class BossABehaviour : MonoBehaviour
 	void Die()
 	{
 		//Reference for death particle - https://www.youtube.com/watch?v=nT031tVrGC0&t=362s
+
 		Instantiate(deathParticle, transform.position, Quaternion.identity);
 		Destroy(gameObject);
+		SceneManager.LoadScene("VictoryScene");
 	}
 }
