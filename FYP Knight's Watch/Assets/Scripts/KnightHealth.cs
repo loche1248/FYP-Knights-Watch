@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KnightHealth : MonoBehaviour
 {
     public Animator animator;
     public Image healthBar;
     public float healthAmount = 100;
+    public ParticleSystem deathParticle;
 
     private void Start()
     {
@@ -19,8 +21,9 @@ public class KnightHealth : MonoBehaviour
     {
         if(healthAmount <= 0)
         {
-            // Application.LoadLevel(Application.loadedLevel);
+            Instantiate(deathParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            SceneManager.LoadScene("DeathScreen");
         }
 
         

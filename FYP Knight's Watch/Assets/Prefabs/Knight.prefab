@@ -463,6 +463,7 @@ MonoBehaviour:
   animator: {fileID: 5191104268972315203}
   healthBar: {fileID: 1666435322754441736}
   healthAmount: 100
+  deathParticle: {fileID: 3036166104299396526, guid: 8f9ef5bbb0262cc44b1885b873ed935c, type: 3}
 --- !u!114 &5191104268972315200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,26 +731,6 @@ PrefabInstance:
     - target: {fileID: 5482446375657380924, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8252883737621442673, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
-      propertyPath: lengthInSec
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8252883737621442673, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8252883737621442673, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.52247244
-      objectReference: {fileID: 0}
-    - target: {fileID: 8252883737621442673, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.52247244
-      objectReference: {fileID: 0}
-    - target: {fileID: 8252883737621442673, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.5566038
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7ba339bd93d341409b311d869bd813b, type: 3}
