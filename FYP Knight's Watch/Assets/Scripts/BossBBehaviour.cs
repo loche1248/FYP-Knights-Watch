@@ -2,10 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class BossABehaviour : MonoBehaviour
+public class BossBBehaviour : MonoBehaviour
 {
 	public Transform player;
 	public int healthAmount = 500;
@@ -14,13 +13,13 @@ public class BossABehaviour : MonoBehaviour
 	public bool isFlipped = false;
 
 	void Start()
-    {
+	{
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-		
+
 	}
 
 	void Update()
-    {
+	{
 		if (player == null)
 		{
 			Destroy(gameObject);
@@ -48,17 +47,17 @@ public class BossABehaviour : MonoBehaviour
 			}
 		}
 
-		
 
-		
+
+
 	}
 
 	public void TakeDamage(int damage)
 	{
 		SoundManagerScript.PlaySound("Hit");
-		//GetComponent<Animator>().SetTrigger("Hurt");
+		GetComponent<Animator>().SetTrigger("Hurt");
 		healthAmount -= damage;
-		
+
 
 		if (healthAmount <= 250)
 		{

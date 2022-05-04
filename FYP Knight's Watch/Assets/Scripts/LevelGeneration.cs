@@ -27,6 +27,8 @@ public class LevelGeneration : MonoBehaviour
     public LayerMask room;
     private int downCounter;
 
+    
+
     private void Start()
     {
         int randStartingPos = Random.Range(0, startingPositions.Length);
@@ -143,6 +145,7 @@ public class LevelGeneration : MonoBehaviour
             {
                 stopGeneration = true;
                 Instantiate(bossPrefab, transform.position, Quaternion.identity);
+              
             }
 
             
