@@ -146,7 +146,7 @@ public class LevelGeneration : MonoBehaviour
             {
                 
                 stopGeneration = true;
-                Instantiate(bossPrefab[Random.Range(0, 2)], transform.position, Quaternion.identity);
+                Instantiate(bossPrefab[Random.Range(0, 3)], transform.position, Quaternion.identity);
               
             }
 

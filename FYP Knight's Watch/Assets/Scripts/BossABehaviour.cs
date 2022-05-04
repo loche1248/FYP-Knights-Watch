@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 public class BossABehaviour : MonoBehaviour
 {
 	public Transform player;
-	public int healthAmount = 500;
+	public int healthAmount = 300;
 	public ParticleSystem deathParticle;
+	public Slider healthBar;
 
 	public bool isFlipped = false;
 
@@ -25,6 +26,7 @@ public class BossABehaviour : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+		healthBar.value = healthAmount;
 	}
 
 	public void LookAtPlayer()
@@ -60,7 +62,7 @@ public class BossABehaviour : MonoBehaviour
 		healthAmount -= damage;
 		
 
-		if (healthAmount <= 250)
+		if (healthAmount <= 150)
 		{
 			GetComponent<Animator>().SetBool("Phase2", true);
 		}
